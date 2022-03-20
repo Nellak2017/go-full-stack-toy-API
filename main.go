@@ -17,7 +17,7 @@ func main() {
 	godotenv.Load()
 	port := os.Getenv("PORT")
 
-	address := fmt.Sprintf("%s:%s", "localhost", port)
+	address := fmt.Sprintf("%s:%s", "0.0.0.0", port)
 	fmt.Println(address)
 	server.Start(address)
 }
